@@ -22,4 +22,4 @@ for line in fi.readlines()[:100]:
     neg_profile = id2profile[arr[-1]]
     obj["output"] = ["< Name:" + pos_profile[0] + " Year:" + pos_profile[1] + " Genre:" + pos_profile[2] +   " > ", "< Name:" + neg_profile[0] + " Year:" + neg_profile[1] + " Genre:" + neg_profile[2] +   " > "]
     all_data.append(obj)
-    fo.write(json.dumps(all_data))
+fo.write(json.dumps(all_data))
